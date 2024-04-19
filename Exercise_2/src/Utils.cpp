@@ -43,7 +43,7 @@ bool importMesh(const string& path, PolygonalMesh& mesh,double tol1D,double tol2
     }
     else{
         for(unsigned int i = 0; i< mesh.NumberofCell2Ds;i++){
-            cout << mesh.IdCell2Ds[i] <<" "<< (mesh.VerticesCell2Ds[i]).size() <<" "<< (mesh.EdgesCell2Ds[i]).size()<<endl;
+            cout <<"Id: "<< mesh.IdCell2Ds[i] <<" Numero vertici e lati: "<< (mesh.VerticesCell2Ds[i]).size() <<" "<< (mesh.EdgesCell2Ds[i]).size()<<endl;
         }
     }
     return true;
